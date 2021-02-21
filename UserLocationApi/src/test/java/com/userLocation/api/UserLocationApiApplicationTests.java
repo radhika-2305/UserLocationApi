@@ -57,7 +57,7 @@ public class UserLocationApiApplicationTests {
 	}
 	
 	@Test
-	 public void testCreateRecord() throws Exception {
+	 public void testForCallingAddUserPostCodeListApi() throws Exception {
 		
 		String jsonInput = new ObjectMapper().writeValueAsString(dataForPost());
 		doNothing().when(recordService).addUserPostCodeList(dataForPost());
@@ -70,7 +70,7 @@ public class UserLocationApiApplicationTests {
 	
 	
 	@Test
-	 public void testGetNameAndCount() throws Exception {
+	 public void testForGettingSortedNamesAndCharactersCountApi() throws Exception {
 		
 		String postCodeFrom = "6000";
 		String postCodeTo = "6015";

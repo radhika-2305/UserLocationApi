@@ -45,14 +45,14 @@ public class UserControllerTests {
 
 	
 	@Test
-	 void testForCreateRecords() {
+	 void testForCallingAddUserPostCodeList() {
 		doNothing().when(service).addUserPostCodeList(dataForPost());
 		HttpStatus status = controller.addUserPostCodeList(dataForPost());
 		assertEquals(status, HttpStatus.OK);
 	}
 	
 	@Test
-	 void testForGetNames() throws Exception {
+	 void testForGettingSortedNamesAndCharactersCount() throws Exception {
 		
 		String postCodeFrom = "6000";
 		String postCodeTo = "6015";
